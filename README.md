@@ -3,13 +3,13 @@
 A go lang ULID library.
 
 
-### Usage
+## Usage
 
 `
 $ go get github.com/chaotaklon/go-ulid
 `
 
-`
+```
 package main
 
 import (
@@ -27,15 +27,16 @@ func main() {
 		time.Sleep(time.Duration(500) * time.Microsecond)
 	}
 }
-`
+```
 
 
-### License
+## License
 
 Apache License 2.0
 
 
-### What is ULID
+## What is ULID
 
 https://github.com/ulid/spec
+
 
