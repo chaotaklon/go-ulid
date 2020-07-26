@@ -23,7 +23,7 @@ func Init() {
 
 func NewCommon(threadSafe bool) []byte {
 	
-	unixTimeStampMs := time.Now().UnixNano() / int64(time.Millisecond)  // int64 type unix timestamp in milliseconds
+	unixTimeStampMs := time.Now().UnixNano() / (int64(time.Millisecond)/int64(time.Nanosecond))  // int64 type unix timestamp in milliseconds
 	timeStampPart := make([]byte, 6)
 	for i := 5; i >= 0; i-- {  // convert int64 timestamp to [6]byte in big endian way
 		timeStampPart[i] = byte(unixTimeStampMs & 0x000000FF)
